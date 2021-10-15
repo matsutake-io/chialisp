@@ -71,3 +71,8 @@ target/
 
 #WebStorm configs
 .idea/
+
+# js
+*.js
+*.d.ts
+*.js.map

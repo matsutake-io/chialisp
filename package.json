@@ -1,10 +1,11 @@
 {
   "name": "@matsutake/chialisp",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Nodeless Chialisp client in TypeScript",
-  "main": "build/index.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest .",
+    "prepare": "tsc"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,30 @@
   "bugs": {
     "url": "https://github.com/matsutake-io/chialisp/issues"
   },
-  "homepage": "https://github.com/matsutake-io/chialisp#readme"
+  "homepage": "https://github.com/matsutake-io/chialisp#readme",
+  "dependencies": {
+    "clvm_tools": "^0.9.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.2",
+    "@types/node": "^16.11.0",
+    "jest": "^27.2.5",
+    "ts-jest": "^27.0.6",
+    "typescript": "^4.4.4"
+  },
+  "jest": {
+    "roots": [
+      "<rootDir>"
+    ],
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "restoreMocks": true,
+    "globals": {
+      "ts-jest": {
+        "tsconfig": "tsconfig.json",
+        "isolatedModules": true
+      }
+    }
+  }
 }
