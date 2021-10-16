@@ -1,2 +1,2 @@
-export { Chialisp } from './Chialisp';
-export { Clvm } from './Clvm';
+export { Chialisp } from './src/Chialisp';
+export { Clvm } from './src/Clvm';
