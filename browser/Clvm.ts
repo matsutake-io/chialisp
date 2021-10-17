@@ -7,13 +7,13 @@ export class Clvm implements Program {
     public async hex(): Promise<string> {
         return new Promise(resolve => {
             setPrintFunction(hex => resolve(hex));
-            go('opc', '-H', this.clvm);
+            go('opc', this.clvm);
         });
     }
 
     public async hash(): Promise<string> {
         return new Promise(resolve => {
-            setPrintFunction(hex => resolve(hex));
+            setPrintFunction(hash => resolve(hash));
             go('opc', '-H', this.clvm);
         });
     }
