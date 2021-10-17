@@ -1,6 +1,6 @@
 {
   "name": "@matsutake/chialisp",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Nodeless Chialisp client in TypeScript",
   "main": "index.js",
   "scripts": {
@@ -41,5 +41,20 @@
         "isolatedModules": true
       }
     }
-  }
+  },
+  "browserslist": [
+    "edge >= 79",
+    "firefox >= 68",
+    "chrome >= 67",
+    "safari > 14",
+    "opera >= 54",
+    "ios_saf >= 14.4",
+    "android >= 67",
+    "op_mob >= 48",
+    "and_chr >= 67",
+    "and_ff >= 68",
+    "samsung >= 9.2",
+    "node >= 10.4.0",
+    "electron >= 4.0.0"
+  ]
 }

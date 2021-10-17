@@ -1,6 +1,6 @@
-import { go, setPrintFunction } from 'clvm_tools';
+import { go, setPrintFunction } from 'clvm_tools/browser';
 import { Clvm } from './Clvm';
-import { Program } from './Program';
+import { Program } from '../src/Program';
 
 export class Chialisp implements Program {
     constructor(private readonly chialisp: string) {}

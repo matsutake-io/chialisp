@@ -1,5 +1,5 @@
-import { go, setPrintFunction } from 'clvm_tools';
-import { Program } from './Program';
+import { go, setPrintFunction } from 'clvm_tools/browser';
+import { Program } from '../src/Program';
 
 export class Clvm implements Program {
     public constructor(private readonly clvm: string) {}
