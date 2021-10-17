@@ -3,6 +3,8 @@
 Compile Chialisp to CLVM and serialize as hex from your web browser.
 
 ```TypeScript
+import { Chialisp } from '@matsutake/chialisp/browser';
+
 const exampleProgram = `
 (mod (password new_puzhash amount)
     (defconstant CREATE_COIN 51)
